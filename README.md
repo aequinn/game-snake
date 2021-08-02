@@ -1,6 +1,6 @@
 ## Project Background
 
-This is a simple game based on the classic arcade game Snake. It was seeded from lesson on [Srimba](https://scrimba.com/learn/snakegame) by [Ania Kubow](https://twitter.com/ania_kubow)
+This is a simple game based on the classic arcade game Snake. It was seeded from a course on [Srimba](https://scrimba.com/learn/snakegame) by [Ania Kubow](https://twitter.com/ania_kubow)
 
 ## How it was built
 
