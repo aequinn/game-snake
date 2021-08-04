@@ -8,15 +8,22 @@ const cellSize = 25;
 const gameboardElement = document.getElementById('gameBoard');
 const openMessageElement = document.getElementById('openMessage')
 
-gameboardElement.style.width = `${boardDimension*cellSize}px`;
 
-//Fill in the gameboard
-for (let i = 0; i < (boardDimension*boardDimension); i++){
-    const cell = document.createElement('div');
-    cell.classList.add('cell');
-    console.log(cell);
-    gameboard.push(cell);
-    gameboardElement.append(cell);
-    openMessageElement.style.display = 'none';
+buildBoard();
 
+/*FUNCTIONS*/
+function buildBoard() {
+    gameboardElement.style.width = `${boardDimension*cellSize}px`;
+    openMessageElement.style.display = 'none'; //remove initial message
+
+    //Fill in the gameboard with all the cells
+    const cells = document.createElement('div');
+    cells.classList.add('cells');
+    for (let i = 0; i < (boardDimension * boardDimension); i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        gameboard.push(cell); //add cells to gameboard array
+        cells.append(cell);
+    }
+    gameboardElement.append(cells);
 }

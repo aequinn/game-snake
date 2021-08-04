@@ -42,11 +42,14 @@ main {
     display: inline-block;
 }
 
-.gameboard {
-    display: flex;
-    flex-wrap: wrap;
+.gameboard {  
     margin: 20px 50px;
     padding: 25px 0;
+}
+
+.cells {
+     display: flex;
+     flex-wrap: wrap;
 }
 .cell {
     background-color: blue;
