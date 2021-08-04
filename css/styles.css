@@ -19,8 +19,9 @@ h1 {
     padding-top: 15px;
 }
 
+
 main {
-    width: 600px;
+    width: fit-content;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 10px;
@@ -41,3 +42,16 @@ main {
     display: inline-block;
 }
 
+.gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+    padding: 25px 0;
+}
+.cell {
+    background-color: blue;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: solid #fff 1px;
+}
