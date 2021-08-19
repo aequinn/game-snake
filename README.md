@@ -15,3 +15,8 @@ The game is simple and consists of a few simple elements
 -   Keyboard commands to move the snake
 -   Random fruits the snake can eat
 -   Scoreboard
+
+## Design and mock ups
+I went through the exercise of designing a color palette for the game and brief style guide. This was in part to get more familiar with [Figma](https://www.figma.com/), which is not the design tool I have been using, but one that I would like to use more.
+- [Artboard view of the game]('https://aequinn.github.io/game-snake/design-phase.html')
+- [Figma interactive prototype]()
