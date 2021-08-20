@@ -22,3 +22,7 @@ I went through the exercise of designing a color palette for the game and brief 
 
 -   [Artboard view of the game](https://aequinn.github.io/game-snake/design-phase.html)
 -   [Figma interactive prototype](https://www.figma.com/proto/Gratq4Btr1I9Fk84cQARYCWS/Snake-Game-Mockup?page-id=0%3A1&node-id=146%3A88&viewport=241%2C48%2C0.75&scaling=min-zoom&starting-point-node-id=1%3A5)
+
+## Try it out
+
+[My Slithery Arcade game](https://aequinn.github.io/game-snake) hosted on git pages
