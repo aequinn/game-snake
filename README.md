@@ -4,7 +4,7 @@ This is a simple game based on the classic arcade game Snake. It was seeded from
 
 ## How it was built
 
-I used HTML, CSS, and JavaScript
+I used only HTML, CSS, and JavaScript. I did not use any frameworks or third party additions.
 
 ## What's in it
 
