@@ -13,25 +13,32 @@ body {
     background-color: #f0f0f0;
 }
 
+header {
+    background-color: #13110F;
+    padding: 20px 0px;
+}
+
 .title {
     font-family: 'Bungee Inline', cursive;
-    border-bottom: 10px solid #555;
-    border-radius: 5px;
+    color: #3E6ADA;
+    letter-spacing: 2px;
+    font-size: 32px;
     display: inline-block;
 }
 
 .slithery {
-    font-family: 'Sansita Swashed', cursive;
-    font-size: 45px;
+    font-size: 32px;
+    fill:#B2C3F0;
+    stroke: #3E6ADA;
+    stroke-width: 1px;
 }
 
+.s {
+    margin-right: 3px;
+    position: relative;
+    top: 9px;
 
-h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    padding-top: 15px;
 }
-
 
 main {
     width: fit-content;
