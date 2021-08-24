@@ -18,6 +18,15 @@ header {
     padding: 20px 0px;
 }
 
+.container {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    min-height: 90vh;
+    margin: 15px;
+}
+
 .title {
     font-family: 'Bungee Inline', cursive;
     color: #3E6ADA;
@@ -29,7 +38,7 @@ header {
 .slithery {
     font-size: 32px;
     fill:#B2C3F0;
-    stroke: #3E6ADA;
+    stroke: #B2C3F0;
     stroke-width: 1px;
 }
 
@@ -44,27 +53,47 @@ main {
     width: fit-content;
     margin: 0 auto;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Scoreboard Styles*/
-.scoreboard h2 {
+.scoreboard {
     font-weight: 300;
     margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 30px;
+    
+}
+.scoreboard-item {
+    width: 200px
+    
+}
+
+.score-header {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 18px;
+    color: #808080;
 }
 
 .score {
+    font-family: 'Michroma', sans-serif;
+    font-size: 24px;
+    color: #000000;
     margin: 0 5px;
-    color: #fff;
     padding: 2px 10px;
-    background-color: #3d3d3d;
     border-radius: 5px;
-    display: inline-block;
+    display: block;
 }
 
 .gameboard {  
-    margin: 20px 50px;
-    padding: 25px 0;
+    
+    padding: 25px 25px;
+    background-color: #231F1C;
+    border-radius: 0 0 30px 30px;
 }
 
 .cells {
@@ -72,11 +101,10 @@ main {
      flex-wrap: wrap;
 }
 .cell {
-    background-color: blue;
+    /* background-color: blue; */
     width: 25px;
     height: 25px;
     box-sizing: border-box;
-    border: solid #fff 1px;
 }
 iframe {
     margin: 20px 0;

@@ -1,17 +1,23 @@
 /*JavaScript file*/
+
 //Variable Setup
 let gameboard = [];
 let boardDimension = 20;
 const cellSize = 25;
+let myScore = 0;
 
 //Element variables
 const gameboardElement = document.getElementById('gameBoard');
-const openMessageElement = document.getElementById('openMessage')
+const openMessageElement = document.getElementById('openMessage');
+const myScoreElement = document.getElementById('myScore');
+const highScoreElement = document.getElementById('highScore');
 
-
+setScoreboard();
 buildBoard();
 
 /*FUNCTIONS*/
+
+//Function that generates the gameboard
 function buildBoard() {
     gameboardElement.style.width = `${boardDimension*cellSize}px`;
     openMessageElement.style.display = 'none'; //remove initial message
@@ -26,4 +32,9 @@ function buildBoard() {
         cells.append(cell);
     }
     gameboardElement.append(cells);
+}
+
+//Function that resets the scoreboard
+function setScoreboard() {
+    myScoreElement.textContent = myScore;
 }
