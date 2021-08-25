@@ -106,6 +106,12 @@ main {
     height: 25px;
     box-sizing: border-box;
 }
+
+.snake {
+    background-color: #FF9C1B;
+}
+
+/* Styles for gitpages and documentation*/
 iframe {
     margin: 20px 0;
 }
