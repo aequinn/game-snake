@@ -8,6 +8,9 @@ let myScore = 0;
 
 let snake = [0,1,2];
 
+let direction = 1;
+let snakeSpeed = .4;
+let movement = setInterval(renderSnake, 1000);
 
 /*Set and get highscore if it exists */
 let highScore = 0;
@@ -23,14 +26,44 @@ const openMessageElement = document.getElementById('openMessage');
 const myScoreElement = document.getElementById('myScore');
 const highScoreElement = document.getElementById('highScore');
 
+
 setScoreboard();
 buildBoard();
 renderSnake();
 
+addEventListener('keyup', keyPress);
+
 /*FUNCTIONS*/
+//listen for direction change
+
+function keyPress(e){
+    //get the right way
+    switch (e.code) {
+        case 'ArrowDown' :
+            direction = boardDimension;
+            break;
+        case 'ArrowUp' :
+            direction = boardDimension*-1;
+            break;
+        case 'ArrowLeft' :
+            direction = -1;
+            break;
+        case 'ArrowRight' :
+            direction = 1;
+            break;
+    }
+
+}
 
 //Render snake
 function renderSnake(){
+    let snakeHead = snake[(snake.length-1)]
+    let snakeTail = snake[0];// snake.push(snake[snake.length]+1);
+    console.log(snakeHead+direction)
+    snake.push(snakeHead+direction);
+    snake.shift();
+    gameboard[snakeTail].classList.remove('snake');
+    console.log(snake);
     snake.forEach(element => {
         gameboard[element].classList.add('snake');
     });
