@@ -91,7 +91,7 @@ main {
 
 .gameboard {  
     
-    padding: 25px 25px;
+    padding: 15px 15px;
     background-color: #231F1C;
     border-radius: 0 0 30px 30px;
 }
@@ -105,8 +105,23 @@ main {
     width: 25px;
     height: 25px;
     box-sizing: border-box;
+    border: #fff solid
 }
-
+/* Fruit styles*/
+.fruit {
+    border-radius: 50%;
+    border: 3px #231F1C solid;
+}
+.fruit--red {
+    background-color: #F25846;
+}
+.fruit--yellow {
+    background-color: #E09E57;
+}
+.fruit--blue {
+    background-color: #3E6ADA;
+}
+/* Snake styles*/
 .snake {
     background-color: #FF9C1B;
 }
